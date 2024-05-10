@@ -7,6 +7,14 @@ This ESLint plugin ensures that services injected into TypeScript classes are de
 **Benefit**: Maintains immutability and prevents reassignments, which leads to better coding practices and enhanced stability.  
 **Context**: Useful in applications that use dependency injection, which is a common pattern in frameworks like Angular.  
 
+## This plugin is published in the npmjs.org
+```sh
+npm link eslint-plugin-readonly-services
+npx eslint "src/scripts/*.{js,ts}"
+$env:ESLINT_PLUGIN_LOGGING="off"; npx eslint "src/scripts/*.{js,ts}"    # if you want to disable logging. Enable by running this command with "on"
+```
+
+# Or if you want to customize this plugin, test, etc., follow the code below:
 ## Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
